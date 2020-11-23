@@ -1,7 +1,18 @@
+.btn {
+  width: 100%;
+}
+
 .usersList-container {
   display: flex;
 }
 
 .list-group-item {
   width: 500px;
+}
+
+.user-preview {
+  width: 250px;
+  height: 100px;
+  padding: .75rem 1.25rem;
+  border: 1px solid rgba(0,0,0,.125);
 }

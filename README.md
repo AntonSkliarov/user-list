@@ -1,11 +1,19 @@
 # Test Task
 
-## Условия задания:
-1. Есть json файл (прикреплён письму) в котором находятся данные о пользователях.
-2. Смоделировать запрос на сервер для получения списка пользователей при заходе на страницу списка пользователей.
-3. Данные сохранить в redux.
-4. Доставать данные из reducer.
-5. Сделать пагинацию на странице, по 5 элементов.
-6. Около списка раз в 8 секунд выводить (фамилия имя) одного из пользователей ( можно случайного или по списку)
-7. Добавить стили.
-8. Залить проект на github/gitlab/bitbucket. Тексты коммитов тоже важны.
+User list with displayed information about an individual user.
+
+For demo click [HERE](https://antonskliarov.github.io/user-list/)
+
+
+## Description:
+
+* Click the button `Show users` to download the user list (server request simulating)
+* You can see 5 users per page. To see more users use pagination below the list.
+* On the right side, you can see info about a random user from the list.
+
+
+#### Installing:
+
+* Fork and clone this repository
+* Run `npm install` in your terminal
+* Run `npm start`

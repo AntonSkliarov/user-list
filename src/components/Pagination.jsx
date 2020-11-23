@@ -9,7 +9,7 @@ export const Pagination = ({ usersPerPage, totalUsers, paginate }) => {
   }
 
   return (
-    <nav>
+    <nav className="d-flex justify-content-center">
       <ul className="pagination">
         {pageNumbers.map(pageNumber => (
           <li key={pageNumber} className="page-item">

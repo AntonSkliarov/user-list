@@ -17,10 +17,12 @@ export function UserInfo({ users }) {
   return (
     <div className="user-preview ml-3">
       <p>
-        {`NAME: ${userPreview.name}`}
+        <span className="text-info">Surname: </span>
+        {userPreview.surname}
       </p>
       <p>
-        {`SURNAME: ${userPreview.surname}`}
+        <span className="text-info">Name: </span>
+        {userPreview.name}
       </p>
     </div>
   );
