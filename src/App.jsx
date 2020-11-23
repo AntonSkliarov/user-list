@@ -2,20 +2,20 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { UserList } from './components/UserList';
 import { SHOW_USERS } from './store';
-
-import data from './api/users.json';
+import { getUsers } from './api/api';
 
 export function App() {
   const dispatch = useDispatch();
   const users = useSelector(store => store.users);
 
-  console.log(users);
-
   const showUsers = () => {
-    dispatch({
-      type: SHOW_USERS,
-      users: data.users,
-    });
+    getUsers()
+      .then((fetchedData) => {
+        dispatch({
+          type: SHOW_USERS,
+          users: fetchedData.users,
+        });
+      });
   };
 
   return (
