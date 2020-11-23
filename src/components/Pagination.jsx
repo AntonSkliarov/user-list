@@ -14,7 +14,7 @@ export const Pagination = ({ usersPerPage, totalUsers, paginate }) => {
         {pageNumbers.map(pageNumber => (
           <li key={pageNumber} className="page-item">
             <a
-              href="!#"
+              href="#/"
               className="page-link"
               onClick={() => paginate(pageNumber)}
             >

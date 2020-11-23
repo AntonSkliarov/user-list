@@ -1,4 +1,4 @@
-# Test Task
+# User List
 
 User list with displayed information about an individual user.
 
