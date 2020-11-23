@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { User } from './User';
+import { UserCard } from './UserCard';
 
 export function UserList({ users }) {
   return (
-    <ul>
+    <ul className="list-group">
       {users.map(user => (
-        <User
+        <UserCard
           key={user.id}
           name={user.name}
           surname={user.surname}

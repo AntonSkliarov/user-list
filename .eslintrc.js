@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@mate-academy/eslint-config',
+    '@mate-academy/eslint-config-react',
     "plugin:react/recommended"
   ],
   // extends: process.env.DISABLE_ESLINT

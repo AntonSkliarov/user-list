@@ -1,0 +1,7 @@
+.usersList-container {
+  display: flex;
+}
+
+.list-group-item {
+  width: 500px;
+}
