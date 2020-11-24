@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { UserList } from './components/UserList';
-import { SHOW_USERS } from './store';
+import { SET_USERS } from './store';
 import { getUsers } from './api/api';
 
 import './App.css';
@@ -18,7 +18,7 @@ export function App() {
     getUsers()
       .then((fetchedData) => {
         dispatch({
-          type: SHOW_USERS,
+          type: SET_USERS,
           users: fetchedData.users,
         });
       });

@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-export const SHOW_USERS = 'users/SHOW_USERS';
+export const SET_USERS = 'users/SET_USERS';
 
 const initialState = {
   users: [],
@@ -8,7 +8,7 @@ const initialState = {
 
 export const usersReducer = (state, action) => {
   switch (action.type) {
-    case SHOW_USERS:
+    case SET_USERS:
       return {
         ...state,
         users: action.users,
